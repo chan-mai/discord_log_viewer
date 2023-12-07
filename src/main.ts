@@ -1,4 +1,5 @@
 import './assets/main.css'
+import "primevue/resources/primevue.min.css";
 import 'primevue/resources/themes/lara-light-pink/theme.css'
 
 import { createApp } from 'vue'
@@ -12,6 +13,6 @@ const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
-app.use(PrimeVue)
+app.use(PrimeVue, { ripple: true })
 
 app.mount('#app')
